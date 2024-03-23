@@ -58,7 +58,7 @@ pros:-
 - Verifying tokens involves only CPU cycles not any IO from the user.
 
 
-  cons:-
+cons:-
 - Invalidating or banning a user instantly is not possible because we have to mark the user_id or JWT id as banned in our data store, or otherwise we have to wait for the token to get expired because it is stored on the client side
 - adding a new field in JWT will increase its size and it would have network impact if it has to be send on each request
 
@@ -71,7 +71,7 @@ pros:-
 - It doesn't store the fields or used data in itself so having less network impact
 
 
-  cons:-
+cons:-
 - might need to maintain a auth service or a dedicated server to do all the auth stuff which is not the case with JWT because JWT can be verified without maintaining any datastore
 
 ## Where to store the token:- Cookies vs Local Storage
